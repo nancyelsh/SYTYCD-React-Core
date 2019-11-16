@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 class AuthorCard extends Component {
   render() {
     const author = this.props.author;
+    console.log("AUTHOR", this.props.author);
     const authorName = `${author.first_name} ${author.last_name}`;
+    console.log("ID", author.id);
 
     return (
       <div className="col-lg-4 col-md-6 col-12">
